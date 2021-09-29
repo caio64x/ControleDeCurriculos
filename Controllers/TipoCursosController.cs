@@ -19,7 +19,7 @@ namespace MontagemCurriculo.Controllers
         }
 
         // GET: TipoCursos
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index( )
         {
             return View(await _context.TipoCursos.ToListAsync());
         }

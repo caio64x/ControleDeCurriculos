@@ -18,8 +18,7 @@ namespace MontagemCurriculo.Mapeamento
 
             //propriedade comum
             builder.Property(i => i.Nome).IsRequired().HasMaxLength(50);
-            //informacao unica
-            builder.HasIndex(i => i.Nome).IsUnique();
+            
             //propriedade comum
             builder.Property(i => i.Nivel).IsRequired().HasMaxLength(50);
 
