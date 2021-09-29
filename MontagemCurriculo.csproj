@@ -16,6 +16,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Views\ExperienciasProfissionais\Create.cshtml" />
+    <None Include="Views\ExperienciasProfissionais\Edit.cshtml" />
+    <None Include="Views\Idiomas\Create.cshtml" />
+    <None Include="Views\Idiomas\Edit.cshtml" />
+    <None Include="Views\Shared\Components\ExperienciasProfissionais\Default.cshtml" />
+    <None Include="Views\Shared\Components\Idiomas\Default.cshtml" />
     <None Include="wwwroot\Rotativa\wkhtmltoimage.exe" />
     <None Include="wwwroot\Rotativa\wkhtmltopdf.exe" />
   </ItemGroup>
