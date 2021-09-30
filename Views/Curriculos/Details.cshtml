@@ -7,7 +7,8 @@
 
 <div class="col s2">
     <h5>Currículo @Model.Nome</h5>&nbsp;
-    <a class="btn red darken-4" asp-controller="Curriculos" asp-action="VisualizarComoPDF">PDF</a>
+    <a class="btn red darken-4" asp-controller="Curriculos" asp-route-id="@Model.CurriculoID" asp-action="VisualizarComoPDF">PDF</a>
+    <input type="hidden" asp-for="CurriculoID" />
 </div>
 
 <div>
