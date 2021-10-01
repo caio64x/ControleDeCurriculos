@@ -155,7 +155,7 @@ namespace MontagemCurriculo.Controllers
         {
             return _context.Curriculos.Any(e => e.CurriculoID == id);
         }
-        // int id, [Bind("CurriculoID,UsuarioID"])
+
 
         public async Task<IActionResult> VisualizarComoPDFAsync(int? id)
         {
@@ -186,42 +186,6 @@ namespace MontagemCurriculo.Controllers
             return new ViewAsPdf("PDF", curriculoView) { FileName = "Curriculo.pdf" };
         }
 
-        //public int VisualizarComoPDFAsync(int? id)
-        //{
-        //    if (id == null)
-        //    {
-        //        return 0;
-        //    }
-
-        //    int curriculo;
-        //    curriculo = Convert.ToInt32(_context.Curriculos
-        //        .Include(c => c.Usuario)
-        //        .FirstOrDefaultAsync(m => m.CurriculoID == id));
-        //    if (curriculo < 0)
-        //    {
-        //        return 0;
-        //    }
-        //    return curriculo;
-        //}
-
-
-
-        //    public IActionResult VisualizarComoPDF()
-        // {
-        //  int idcurruculo = VisualizarComoPDFAsync(id);
-
-
-
-        //    var idUsuario = HttpContext.Session.GetInt32("UsuarioID");
-
-        //    CurriculoViewModel curriculoView = new CurriculoViewModel();
-        //    var Objetivo = _context.Objetivos.Where(o => o.Curriculo.UsuarioID == idUsuario && o.CurriculoID == curriculo.CurriculoID).ToList();
-        //    curriculoView.Objetivos = Objetivo;
-
-
-        //    return new ViewAsPdf("PDF", curriculo) { FileName = "Curriculo.pdf" };
-        //}
-
-
+       
     }
 }
